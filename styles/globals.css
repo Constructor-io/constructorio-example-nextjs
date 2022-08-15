@@ -1,5 +1,8 @@
 html,
 body {
+  color: white;
+  background: black;
+  color-scheme: dark;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -15,12 +18,33 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.homepage-container {
+  text-align: center;
+  max-width: 2000px;
+  margin: auto;
 }
+
+.options {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 2px solid gray;
+  border-radius: 5px;
+  padding: 15px;
+  width: 30%;
+}
+
+.option a {
+  display: block;
+  border: 1px solid gray;
+  margin-top: 15px;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
