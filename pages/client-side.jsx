@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import useCioClient from '../hooks/useCioClient'
 
-export default function ClientSide(props) {
-  const [results, setResults] = useState(props?.data?.response?.results);
+export default function ClientSide() {
+  const [results, setResults] = useState([]);
   const cioClient = useCioClient();
 
   useEffect(() => {
