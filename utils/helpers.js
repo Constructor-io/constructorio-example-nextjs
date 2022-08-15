@@ -7,6 +7,8 @@ export const fetchResultsServerSide = (context) => {
   const userAgent = headers['user-agent'];
   let userIp;
 
+  // Constructor.io Node package requires additional paramaters about the end user
+  // More information can be found here: https://github.com/Constructor-io/constructorio-node/wiki/Additional-Information-For-Backend-Integrations
   if (headers["x-forwarded-for"]) {
     userIp = headers["x-forwarded-for"].split(',')[0]
   } else {
@@ -15,11 +17,11 @@ export const fetchResultsServerSide = (context) => {
 
   const cioNode = new ConstructorIONode({
     apiKey,
-    securityToken: '',
+    securityToken: '<<SECURITY_TOKEN>>',
   });
 
   const userParameters = {
-    sessionId: ConstructorioID_session_id || 1,
+    sessionId: ConstructorioID_session_id,
     clientId: ConstructorioID_client_id,
     userIp,
     userAgent,
