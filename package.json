@@ -4,7 +4,6 @@
   "description": "A collection of Next.js sandbox examples for integrating with Constructor",
   "author": "constructor.io",
   "license": "MIT",
-  "homepage": "https://constructor-io.github.io/constructorio-nextjs-example/",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Constructor-io/constructorio-nextjs-example.git"
