@@ -1,11 +1,8 @@
 import { fetchResultsServerSide } from '../utils/helpers';
+import SearchResults from '../components/SearchResults';
 
 export default function Home(props) {
-  return (
-    <div>
-      <p>{ props?.data?.response?.results?.[0]?.value }</p>
-    </div>
-  )
+  return ( <SearchResults items={ props?.data?.response?.results } /> )
 }
 
 export async function getServerSideProps(context) {

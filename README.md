@@ -1,8 +1,8 @@
-# Constructor.io NextJS Example
+# Constructor.io Next.js Example
 
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Constructor-io/constructorio-nextjs-example/blob/master/LICENSE)
 
-A NextJS example for integrating with [Constructor.io](http://constructor.io/). [Constructor.io](http://constructor.io/) provides search as a service that optimizes results using artificial intelligence (including natural language processing, re-ranking to optimize for conversions, and user personalization).
+A Next.js example for integrating with [Constructor.io](http://constructor.io/). [Constructor.io](http://constructor.io/) provides search as a service that optimizes results using artificial intelligence (including natural language processing, re-ranking to optimize for conversions, and user personalization).
 
 This application utilizes the [Constructor.io JavaScript client](https://github.com/Constructor-io/constructorio-client-javascript) and [Constructor.io Node](https://github.com/Constructor-io/constructorio-node).
 
