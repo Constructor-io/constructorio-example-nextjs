@@ -15,7 +15,7 @@ export default function Home() {
             In this option, the requests are made directly from the end user&apos;s browser to Constructor.io servers so the end to end response time is faster.
           </p>
           <Link href="/client-side">
-            <a className="block border border-gray-500 mt-4 rounded-lg px-4 py-2">Example</a>
+            <a className="block mt-4 rounded-lg px-4 py-3 bg-blue-400 hover:bg-blue-600 text-white font-semibold tracking-wide">Example</a>
           </Link>
         </div>
         <div className="flex flex-col justify-between border border-2 border-gray-500 rounded-lg p-4 w-[30%]">
@@ -25,7 +25,7 @@ export default function Home() {
             client by Next.js. Next Router can be used to refresh props (fetch new results) after user interacts with the page.
           </p>
           <Link href="/server-side">
-            <a className="block border border-gray-500 mt-4 rounded-lg px-4 py-2">Example</a>
+            <a className="block mt-4 rounded-lg px-4 py-3 bg-blue-400 hover:bg-blue-600 text-white font-semibold tracking-wide">Example</a>
           </Link>
         </div>
         <div className="flex flex-col justify-between border border-2 border-gray-500 rounded-lg p-4 w-[30%]">
@@ -34,7 +34,7 @@ export default function Home() {
             This option uses server side rendering for the initial page load and uses client side rendering for the subsequent requests. It uses appropriate Constructor.io package depending on the context.
           </p>
           <Link href="/client-and-server-side">
-            <a className="block border border-gray-500 mt-4 rounded-lg px-4 py-2">Example</a>
+            <a className="block mt-4 rounded-lg px-4 py-3 bg-blue-400 hover:bg-blue-600 text-white font-semibold tracking-wide">Example</a>
           </Link>
         </div>
       </div>

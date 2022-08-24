@@ -5,6 +5,7 @@ function SearchResults(props) {
 
   return (
     <div className="flex flex-col grow mt-8">
+      { items?.length > 0 && <p className="mx-auto mb-4 text-lg">Search results for &quot;shoes&quot; ({ items?.length } results)</p> }
       <div
         id="search-results"
         className="mb-4 flex flex-col sm:flex-row flex-wrap sm:grid sm:grid-cols-[repeat(2,225px)]
