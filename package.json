@@ -1,7 +1,13 @@
 {
-  "name": "constructor-next-example",
+  "name": "constructorio-nextjs-example",
   "version": "1.0.0",
-  "private": true,
+  "description": "A collection of Next.js sandbox examples for integrating with Constructor",
+  "author": "constructor.io",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Constructor-io/constructorio-nextjs-example.git"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
