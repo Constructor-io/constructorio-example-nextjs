@@ -1,11 +1,11 @@
 import Link from 'next/link';
 
-export default function Home(props) {
+export default function Home() {
   return (
     <div className="homepage-container">
-      <h1>Constructor.io NextJS Example</h1>
+      <h1>Constructor.io Next.js Example</h1>
       <p>
-        This is a repository that showcases different options to integrate Constructor.io SDKs into a NextJS project.
+        This is a repository that showcases different options to integrate Constructor.io SDKs into a Next.js project.
       </p>
       <div className="options">
         <div className="option">
@@ -22,7 +22,7 @@ export default function Home(props) {
           <h3>Server Side Rendering</h3>
           <p>
             This option uses server side rendering for all of the requests. It only uses the server side Constructor.io package (constructorio-node). The data is fetched on the server and passed to the
-            client by NextJS. Next Router can be used to refresh props (fetch new results) after user interacts with the page.
+            client by Next.js. Next Router can be used to refresh props (fetch new results) after user interacts with the page.
           </p>
           <Link href="/server-side">
             <a>Server Side Rendering</a>
