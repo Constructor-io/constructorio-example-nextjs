@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import useCioClient from '../hooks/useCioClient'
 import { fetchResultsServerSide } from '../utils/helpers';
+import SearchResults from '../components/SearchResults';
 
 export default function ClientAndServerSide(props) {
   const [results, setResults] = useState(props?.data?.response?.results);
@@ -16,11 +17,7 @@ export default function ClientAndServerSide(props) {
     if (cioClient?.search) fetchResultsFromAPI();
   }, [cioClient?.search]);
 
-  return (
-    <div>
-      <p>{ results?.[0]?.value }</p>
-    </div>
-  )
+  return ( <SearchResults items={ results } /> )
 }
 
 export async function getServerSideProps(context) {

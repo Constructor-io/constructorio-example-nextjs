@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import useCioClient from '../hooks/useCioClient'
+import SearchResults from '../components/SearchResults';
 
 export default function ClientSide() {
   const [results, setResults] = useState([]);
@@ -15,10 +16,6 @@ export default function ClientSide() {
     if (cioClient?.search) fetchResultsFromAPI();
   }, [cioClient?.search]);
 
-  return (
-    <div>
-      <p>{ results?.[0]?.value }</p>
-    </div>
-  )
+  return ( <SearchResults items={ results } /> )
 }
 
