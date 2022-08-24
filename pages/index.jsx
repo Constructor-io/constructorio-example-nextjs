@@ -20,7 +20,7 @@ export default function Home() {
             <a class="text-blue-600" href="https://www.npmjs.com/package/@constructor-io/constructorio-client-javascript" rel="nofollow" target="_blank">constructorio-client-javascript</a>
           </p>
           <Link href="/client-side">
-            <a className="block border border-gray-500 mt-4 px-4 py-2">Example</a>
+            <a className="block mt-4 rounded-lg px-4 py-3 bg-blue-400 hover:bg-blue-600 text-white font-semibold tracking-wide">Example</a>
           </Link>
         </div>
         <div className="flex flex-col justify-between border border-2 border-gray-300 p-4 w-[30%]">
@@ -35,7 +35,7 @@ export default function Home() {
             <a class="text-blue-600" href="https://www.npmjs.com/package/@constructor-io/constructorio-node" rel="nofollow" target="_blank">constructorio-node</a>
           </p>
           <Link href="/server-side">
-            <a className="block border border-gray-500 mt-4 px-4 py-2">Example</a>
+            <a className="block mt-4 rounded-lg px-4 py-3 bg-blue-400 hover:bg-blue-600 text-white font-semibold tracking-wide">Example</a>
           </Link>
         </div>
         <div className="flex flex-col justify-between border border-2 border-gray-300 p-4 w-[30%]">
@@ -50,7 +50,7 @@ export default function Home() {
             <a class="text-blue-600" href="https://www.npmjs.com/package/@constructor-io/constructorio-client-javascript" rel="nofollow" target="_blank">constructorio-client-javascript</a><br /><a class="text-blue-600" href="https://www.npmjs.com/package/@constructor-io/constructorio-node" rel="nofollow" target="_blank">constructorio-node</a>
           </p>
           <Link href="/client-and-server-side">
-            <a className="block border border-gray-500 mt-4 px-4 py-2">Example</a>
+            <a className="block mt-4 rounded-lg px-4 py-3 bg-blue-400 hover:bg-blue-600 text-white font-semibold tracking-wide">Example</a>
           </Link>
         </div>
       </div>
