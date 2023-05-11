@@ -17,7 +17,7 @@ export default function Home() {
             In this option, requests are made directly from the end user&apos;s browser to Constructor.io servers. As a result, the end to end response time is fastest.
           </p>
           <p className="my-2">
-            <a className="text-blue-600" href="https://www.npmjs.com/package/@constructor-io/constructorio-client-javascript" rel="nofollow" target="_blank">constructorio-client-javascript</a>
+            <a className="text-blue-600" href="https://www.npmjs.com/package/@constructor-io/constructorio-client-javascript" rel="noreferrer" target="_blank">constructorio-client-javascript</a>
           </p>
           <Link href="/client-side">
             <a className="block mt-4 rounded-lg px-4 py-3 bg-blue-400 hover:bg-blue-600 text-white font-semibold tracking-wide">Example</a>
@@ -32,7 +32,7 @@ export default function Home() {
             The data is fetched on the server and passed to the client through Next.js. Next Router can be used to refresh props (fetch new results) after user interacts with the page.
           </p>
           <p className="my-2">
-            <a className="text-blue-600" href="https://www.npmjs.com/package/@constructor-io/constructorio-node" rel="nofollow" target="_blank">constructorio-node</a>
+            <a className="text-blue-600" href="https://www.npmjs.com/package/@constructor-io/constructorio-node" rel="noreferrer" target="_blank">constructorio-node</a>
           </p>
           <Link href="/server-side">
             <a className="block mt-4 rounded-lg px-4 py-3 bg-blue-400 hover:bg-blue-600 text-white font-semibold tracking-wide">Example</a>
@@ -47,9 +47,9 @@ export default function Home() {
             It utilizes the appropriate Constructor.io client library depending on the context.
           </p>
           <p className="my-2">
-            <a className="text-blue-600" href="https://www.npmjs.com/package/@constructor-io/constructorio-client-javascript" rel="nofollow" target="_blank">constructorio-client-javascript</a>
+            <a className="text-blue-600" href="https://www.npmjs.com/package/@constructor-io/constructorio-client-javascript" rel="noreferrer" target="_blank">constructorio-client-javascript</a>
             <br />
-            <a className="text-blue-600" href="https://www.npmjs.com/package/@constructor-io/constructorio-node" rel="nofollow" target="_blank">constructorio-node</a>
+            <a className="text-blue-600" href="https://www.npmjs.com/package/@constructor-io/constructorio-node" rel="noreferrer" target="_blank">constructorio-node</a>
           </p>
           <Link href="/client-and-server-side">
             <a className="block mt-4 rounded-lg px-4 py-3 bg-blue-400 hover:bg-blue-600 text-white font-semibold tracking-wide">Example</a>
@@ -59,4 +59,3 @@ export default function Home() {
     </div>
   )
 }
-
