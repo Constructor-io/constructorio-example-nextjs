@@ -8,7 +8,6 @@ const nextConfig = {
   webpack: (config, { isServer, webpack } = {}) => {
     if (!isServer) {
       config.resolve.fallback.fs = false;
-      config.resolve.fallback.worker_threads = false;
     }
 
     config.plugins = [
@@ -16,11 +15,7 @@ const nextConfig = {
         const mod = resource.request.replace(/^node:/, '');
 
         if (mod) {
-          if (mod === 'stream/web') {
-            resource.request =  'web-streams-polyfill/ponyfill/es2018';
-          } else {
-            resource.request = mod;
-          }
+          resource.request = mod;
         } else {
           throw new Error(`Cannot Find Module ${resource.request}`);
         }

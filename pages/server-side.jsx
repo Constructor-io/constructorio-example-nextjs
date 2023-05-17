@@ -1,6 +1,6 @@
 import { fetchResultsServerSide } from '../utils/helpers';
 import SearchResults from '../components/SearchResults';
-import nodeFetch from 'node-fetch';
+import ConstructorIONode from '@constructor-io/constructorio-node';
 
 export default function Home(props) {
   return ( <SearchResults items={ props?.data?.response?.results } /> )
