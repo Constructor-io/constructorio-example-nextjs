@@ -1,28 +1,19 @@
 import { cookies, headers } from "next/headers";
 import ConstructorIONode from "@constructor-io/constructorio-node";
-import { apiKey } from "../../utils/constants";
+import {
+  apiKey,
+  clientIdCookieName,
+  sessionIdCookieName,
+} from "../../utils/constants";
+import { getUserIp } from "../../utils/helpers";
 import SearchResults from "../../components/SearchResults";
 
-const CLIENT_ID_COOKIE_NAME = "ConstructorioID_client_id";
-const SESSION_ID_COOKIE_NAME = "ConstructorioID_session_id";
-
-// https://nextjs.org/docs/app/api-reference/functions/headers#ip-address
-function getUserIp() {
-  const forwardedFor = headers().get("x-forwarded-for");
-
-  if (forwardedFor) {
-    return forwardedFor.split(",")[0];
-  }
-
-  return headers().get("x-real-ip");
-}
-
-export default async function ServerComponentsExamplePage() {
+export default async function ServerComponentsExamplePage({ searchParams }) {
   const cookieStore = cookies();
 
-  const clientId = cookieStore.get(CLIENT_ID_COOKIE_NAME)?.value;
-  const sessionId = cookieStore.get(SESSION_ID_COOKIE_NAME)?.value;
-  const userIp = getUserIp();
+  const clientId = cookieStore.get(clientIdCookieName)?.value;
+  const sessionId = cookieStore.get(sessionIdCookieName)?.value;
+  const userIp = getUserIp(headers);
   const userAgent = headers().get("user-agent");
 
   const userParameters = {
@@ -39,15 +30,11 @@ export default async function ServerComponentsExamplePage() {
 
   const data = await cioNode.search.getSearchResults(
     "shoes",
-    undefined,
+    undefined, // parameters
     userParameters
   );
 
   const items = data?.response?.results;
 
-  return (
-    <>
-      <SearchResults items={items} />
-    </>
-  );
+  return <SearchResults items={items} />;
 }

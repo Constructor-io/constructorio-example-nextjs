@@ -1,5 +1,5 @@
-import ConstructorIONode from '@constructor-io/constructorio-node';
-import { apiKey } from './constants';
+import ConstructorIONode from "@constructor-io/constructorio-node";
+import { apiKey } from "./constants";
 
 export const fetchResultsServerSide = (context) => {
   const { req: { cookies, headers, connection } } = context;
@@ -27,6 +27,20 @@ export const fetchResultsServerSide = (context) => {
     userAgent,
   };
 
-  return cioNode.search.getSearchResults('shoes', userParameters);
-}
+  return cioNode.search.getSearchResults("shoes", userParameters);
+};
 
+// https://nextjs.org/docs/app/api-reference/functions/headers#ip-address
+/**
+ * @param {import('next/headers').Headers} headers
+ * @returns {string | undefined}
+ */
+export const getUserIp = (headers) => {
+  const forwardedFor = headers().get("x-forwarded-for");
+
+  if (forwardedFor) {
+    return forwardedFor.split(",")[0];
+  }
+
+  return headers().get("x-real-ip");
+};
