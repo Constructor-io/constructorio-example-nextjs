@@ -11,7 +11,7 @@ export default function Home() {
         client libraries into a Next.js project.
       </p>
       <div className="flex justify-around mt-10">
-        <div className="flex flex-col rounded-lg justify-between border border-2 border-gray-300 p-4 w-[30%]">
+        <div className="flex flex-col rounded-lg justify-between border border-2 border-gray-300 p-4 w-[23%]">
           <h3 className="text-lg font-bold mb-2">Client Side Rendering</h3>
           <p className="my-2">
             <strong>Recommended</strong> - This option is the simplest to
@@ -40,7 +40,7 @@ export default function Home() {
             Example
           </Link>
         </div>
-        <div className="flex flex-col rounded-lg justify-between border border-2 border-gray-300 p-4 w-[30%]">
+        <div className="flex flex-col rounded-lg justify-between border border-2 border-gray-300 p-4 w-[23%]">
           <h3 className="text-lg font-bold mb-2">Server Side Rendering</h3>
           <p className="my-2">
             This option uses server-side rendering utilizing only the server
@@ -68,7 +68,7 @@ export default function Home() {
             Example
           </Link>
         </div>
-        <div className="flex flex-col rounded-lg justify-between border border-2 border-gray-300 rounded-lg p-4 w-[30%]">
+        <div className="flex flex-col rounded-lg justify-between border border-2 border-gray-300 rounded-lg p-4 w-[23%]">
           <h3 className="text-lg font-bold mb-2">
             Client + Server Side Rendering
           </h3>
@@ -101,6 +101,33 @@ export default function Home() {
           </p>
           <Link
             href="/client-and-server-side"
+            className="block mt-4 rounded-lg px-4 py-3 bg-blue-400 hover:bg-blue-600 text-white font-semibold tracking-wide"
+          >
+            Example
+          </Link>
+        </div>
+        <div className="flex flex-col rounded-lg justify-between border border-2 border-gray-300 p-4 w-[23%]">
+          <h3 className="text-lg font-bold mb-2">Server Components</h3>
+          <p className="my-2">
+            This option uses React Server Components for rendering page on the
+            server side, utilizing the server side client library.
+          </p>
+          <p className="my-2">
+            Both the data fetching and rendering are performed on the server
+            component.
+          </p>
+          <p className="my-2">
+            <a
+              className="text-blue-600"
+              href="https://www.npmjs.com/package/@constructor-io/constructorio-node"
+              rel="noreferrer"
+              target="_blank"
+            >
+              constructorio-node
+            </a>
+          </p>
+          <Link
+            href="/server-components"
             className="block mt-4 rounded-lg px-4 py-3 bg-blue-400 hover:bg-blue-600 text-white font-semibold tracking-wide"
           >
             Example
