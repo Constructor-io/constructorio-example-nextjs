@@ -27,7 +27,7 @@ export const fetchResultsServerSide = (context) => {
     userAgent,
   };
 
-  return cioNode.search.getSearchResults("shoes", userParameters);
+  return cioNode.search.getSearchResults("shoes", undefined, userParameters);
 };
 
 // https://nextjs.org/docs/app/api-reference/functions/headers#ip-address
