@@ -19,7 +19,7 @@ export default function Home() {
           <p className="my-2">
             <a className="text-blue-600" href="https://www.npmjs.com/package/@constructor-io/constructorio-client-javascript" rel="noreferrer" target="_blank">constructorio-client-javascript</a>
           </p>
-          <Link href="/client-side">
+          <Link legacyBehavior href="/client-side">
             <a className="block mt-4 rounded-lg px-4 py-3 bg-blue-400 hover:bg-blue-600 text-white font-semibold tracking-wide">Example</a>
           </Link>
         </div>
@@ -34,7 +34,7 @@ export default function Home() {
           <p className="my-2">
             <a className="text-blue-600" href="https://www.npmjs.com/package/@constructor-io/constructorio-node" rel="noreferrer" target="_blank">constructorio-node</a>
           </p>
-          <Link href="/server-side">
+          <Link legacyBehavior href="/server-side">
             <a className="block mt-4 rounded-lg px-4 py-3 bg-blue-400 hover:bg-blue-600 text-white font-semibold tracking-wide">Example</a>
           </Link>
         </div>
@@ -51,7 +51,7 @@ export default function Home() {
             <br />
             <a className="text-blue-600" href="https://www.npmjs.com/package/@constructor-io/constructorio-node" rel="noreferrer" target="_blank">constructorio-node</a>
           </p>
-          <Link href="/client-and-server-side">
+          <Link legacyBehavior href="/client-and-server-side">
             <a className="block mt-4 rounded-lg px-4 py-3 bg-blue-400 hover:bg-blue-600 text-white font-semibold tracking-wide">Example</a>
           </Link>
         </div>

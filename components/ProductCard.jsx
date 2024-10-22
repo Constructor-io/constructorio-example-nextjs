@@ -18,8 +18,8 @@ function ProductCard({ product }) {
           alt={ product.value }
           onError={ (event) => { event.target.style.display = 'none'; } }
           onLoad={ (event) => { event.target.className = imageTagClassesLoaded; } }
-          width="225px"
-          height="225px"
+          width="225"
+          height="225"
           />
       </div>
       {product.value}
