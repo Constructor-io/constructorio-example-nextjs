@@ -19,9 +19,7 @@ export default function Home() {
           <p className="my-2">
             <a className="text-blue-600" href="https://www.npmjs.com/package/@constructor-io/constructorio-client-javascript" rel="noreferrer" target="_blank">constructorio-client-javascript</a>
           </p>
-          <Link legacyBehavior href="/client-side">
-            <a className="block mt-4 rounded-lg px-4 py-3 bg-blue-400 hover:bg-blue-600 text-white font-semibold tracking-wide">Example</a>
-          </Link>
+          <Link href="/client-side" className="block mt-4 rounded-lg px-4 py-3 bg-blue-400 hover:bg-blue-600 text-white font-semibold tracking-wide">Example</Link>
         </div>
         <div className="flex flex-col rounded-lg justify-between border border-2 border-gray-300 p-4 w-[30%]">
           <h3 className="text-lg font-bold mb-2">Server Side Rendering</h3>
@@ -34,9 +32,7 @@ export default function Home() {
           <p className="my-2">
             <a className="text-blue-600" href="https://www.npmjs.com/package/@constructor-io/constructorio-node" rel="noreferrer" target="_blank">constructorio-node</a>
           </p>
-          <Link legacyBehavior href="/server-side">
-            <a className="block mt-4 rounded-lg px-4 py-3 bg-blue-400 hover:bg-blue-600 text-white font-semibold tracking-wide">Example</a>
-          </Link>
+          <Link href="/server-side" className="block mt-4 rounded-lg px-4 py-3 bg-blue-400 hover:bg-blue-600 text-white font-semibold tracking-wide">Example</Link>
         </div>
         <div className="flex flex-col rounded-lg justify-between border border-2 border-gray-300 rounded-lg p-4 w-[30%]">
           <h3 className="text-lg font-bold mb-2">Client + Server Side Rendering</h3>
@@ -51,9 +47,7 @@ export default function Home() {
             <br />
             <a className="text-blue-600" href="https://www.npmjs.com/package/@constructor-io/constructorio-node" rel="noreferrer" target="_blank">constructorio-node</a>
           </p>
-          <Link legacyBehavior href="/client-and-server-side">
-            <a className="block mt-4 rounded-lg px-4 py-3 bg-blue-400 hover:bg-blue-600 text-white font-semibold tracking-wide">Example</a>
-          </Link>
+          <Link href="/client-and-server-side" className="block mt-4 rounded-lg px-4 py-3 bg-blue-400 hover:bg-blue-600 text-white font-semibold tracking-wide">Example</Link>
         </div>
       </div>
     </div>
